@@ -1,26 +1,6 @@
-# Git Learning Journal
+# Git Learning Journal — Day 2
 
-## Day 1 - February 17, 2026
-
-### What I Learned Today
-
-I learned a git command `git --version` today.
-
-**What it does:**
-- This command shows the installed version of Git on my system
-- It helps verify that Git is properly installed and accessible from the command line
-
-**Example:**
-```bash
-git --version
-```
-
-**Output:**
-```
-git version 2.XX.X.windows.1
-```
-
-## Day 2 - February 19, 2026
+Date: 2026-02-19
 
 ### What I Learned Today
 
@@ -89,8 +69,7 @@ If `git add` fails with "Permission denied" (Windows/Visual Studio locks):
 - Close Visual Studio or any program that may lock files, then run `git add .` again.
 - If files were already added accidentally, remove them from the index and keep them locally:
 ```bash
-git rm -r --cached .vs
-git rm -r --cached bin obj
+git rm -r --cached .vsgit rm -r --cached bin obj
 git add .gitignore
 git commit -m "Remove IDE/build files and add .gitignore"
 ```
